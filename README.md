@@ -1,5 +1,5 @@
 # chalmers-card-balance
-Public API for checking account balance of Chalmers Student Union cards
+Public REST API for checking account balance of Chalmers Student Union cards
 
 ## Installation
 

@@ -1,6 +1,6 @@
 {
     "name": "johanwinther/chalmers-card-balance",
-    "description": "API for fetching card balance of Student Union Card",
+    "description": "Public REST API for checking account balance of Chalmers Student Union cards",
     "type": "project",
     "license": "MIT",
     "authors": [
