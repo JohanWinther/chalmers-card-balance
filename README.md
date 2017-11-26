@@ -14,7 +14,7 @@ Add ``johanwinther/chalmers-card-balance`` as a require dependency in your ``com
 
 * **URL**
 
-  `/card-balance/<Card number>`
+  `/<Card number>`
 
 * **Method:**
 
@@ -71,7 +71,7 @@ Add ``johanwinther/chalmers-card-balance`` as a require dependency in your ``com
 
   ```javascript
     $.ajax({
-      url: "/card-holder/1111222233334444",
+      url: "example.com/1111222233334444",
       dataType: "json",
       type : "GET",
       success : function(r) {

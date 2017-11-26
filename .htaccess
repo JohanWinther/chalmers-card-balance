@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^card-balance/(.+)(/?)$ index.php?cardNumber=$1
+RewriteRule ^(.+)(/?)$ index.php

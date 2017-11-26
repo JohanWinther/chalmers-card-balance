@@ -1,7 +1,7 @@
 {
     "name": "johanwinther/chalmers-card-balance",
     "description": "API for fetching card balance of Student Union Card",
-    "type": "api",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {

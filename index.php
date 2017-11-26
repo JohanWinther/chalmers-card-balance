@@ -16,7 +16,7 @@ function invalid_number($code,$error_msg) {
     die;
 }
 
-preg_match('/(\d{16})/', $_GET['cardNumber'], $matches);
+preg_match('/(\d{16})/', $_SERVER['REQUEST_URI'], $matches);
 if (!array_key_exists(0 , $matches)) {
     invalid_number(400,"Invalid card number: should be 16 digits.");
 }
