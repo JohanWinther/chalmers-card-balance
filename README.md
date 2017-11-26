@@ -81,7 +81,7 @@ Add ``johanwinther/chalmers-card-balance`` as a require dependency in your ``com
 
   ```javascript
     $.ajax({
-      url: "example.com/1111222233334444",
+      url: "https://ftek.se/api/v1/1111222233334444",
       dataType: "json",
       type : "GET",
       success : function(r) {
