@@ -1,7 +1,7 @@
 {
     "name": "johanwinther/chalmers-card-balance",
     "description": "API for fetching card balance of Student Union Card",
-    "type": "library",
+    "type": "api",
     "license": "MIT",
     "authors": [
         {
@@ -11,6 +11,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "fabpot/goutte": "^3.2"
+        "fabpot/goutte": "^3.2",
+        "php": ">=5.5.0"
     }
 }
