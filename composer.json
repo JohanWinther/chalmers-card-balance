@@ -1,0 +1,16 @@
+{
+    "name": "johanwinther/chalmers-card-balance",
+    "description": "API for fetching card balance of Student Union Card",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johan Winther",
+            "email": "johan.winther@outlook.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "fabpot/goutte": "^3.2"
+    }
+}
