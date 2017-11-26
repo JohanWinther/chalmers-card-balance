@@ -25,7 +25,7 @@ use GuzzleHttp\Client as GuzzleClient;
 
 $client = new Client();
 $guzzleClient = new GuzzleClient(array(
-    'timeout' => 20,
+    'timeout' => 10,
 ));
 $client->setClient($guzzleClient);
 
