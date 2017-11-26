@@ -1,8 +1,6 @@
 <?php
 require("vendor/autoload.php");
 
-use Goutte\Client;
-
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Credentials: true");
 header("Access-Control-Max-Age: 60");
@@ -22,8 +20,20 @@ if (!array_key_exists(0 , $matches)) {
 }
 $cardNumber = $matches[1];
 
+use Goutte\Client;
+use GuzzleHttp\Client as GuzzleClient;
+
 $client = new Client();
-$crawler = $client->request('GET', 'https://kortladdning3.chalmerskonferens.se/Default.aspx');
+$guzzleClient = new GuzzleClient(array(
+    'timeout' => 20,
+));
+$client->setClient($guzzleClient);
+
+try {
+    $crawler = $client->request('GET', 'https://kortladdning3.chalmerskonferens.se/Default.aspx');
+} catch (Exception $e) {
+    invalid_number(408, "Connection timed out.");
+}
 $form = $crawler->selectButton('Nästa')->form();
 $crawler = $client->submit($form, array('txtCardNumber' => $cardNumber));
 if ($crawler->filter('#txtPTMCardName')->count() != 1) {

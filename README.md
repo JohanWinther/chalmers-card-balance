@@ -67,6 +67,16 @@ Add ``johanwinther/chalmers-card-balance`` as a require dependency in your ``com
     ```
     **Explanation:** Card is not registered in the system.
 
+   OR
+   * **Code:** 408 REQUEST TIMED OUT <br />
+     **Content:**
+     ``` json
+     {
+         "error": "Connection timed out."
+     }
+     ```
+     **Explanation:** Could not load external service.
+
 * **Sample Call:**
 
   ```javascript
