@@ -7,6 +7,8 @@ Public REST API for checking account balance of Chalmers Student Union cards
 Add ``johanwinther/chalmers-card-balance`` as a require dependency in your ``composer.json`` file:
 
     composer require johanwinther/chalmers-card-balance
+    
+Rename .htaccess.tmp to .htaccess and set the RewriteBase to the absolute folder path of card.php.
 
 # API
 ## **Show Card Balance**
