@@ -1,0 +1,6 @@
+RewriteEngine On
+# Change RewriteBase to the absolute folder path of your files
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)(/?)$ card.php?cardNumber=$1 [L]
