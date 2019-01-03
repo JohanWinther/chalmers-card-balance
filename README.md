@@ -1,3 +1,5 @@
+# THIS HAS BEEN DEPRECATED SINCE THE SERVICE HAS ENABLED A CAPTCHA
+
 # chalmers-card-balance
 Public REST API for checking account balance of Chalmers Student Union cards
 
